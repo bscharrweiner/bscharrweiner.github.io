@@ -1,20 +1,180 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>HW1</title>
-</head>
-<body>
-<h1 style="color: #a10030">Ben S</h1>
-    <h2> My major is Computer Science </h2>
-    <p>My IP Address is 130.64.64.38</p>
-    <p>I was born and raised in Natick, Massachusetts</p>
+    <head>
+        <meta charset="utf-8">
+        <title>TerraSpeak</title>
+        <link rel="stylesheet" href="style.css">
 
-    <img src="Capadoccia.jpg" style="float: left; margin-right: 20px;">
-    <p>This past summer I travelled to Turkey. One of the many amazing places that
-    I went to was Capadoccia. A beautiful, unique landscape awash with history,
-    the region's beauty was only surpassed by the balloon rides offered. </p>
-    <p><a href="https://www.singhs-cafe.com/" target="_blank">Singhs Cafe: My Favorite Resturant</a></p>
-    <p>Fun fact: I have an obsessive online Bridge player and I regularly play 5 hands a day.</p>
+        <style type="text/css">
+            h1 {
+                width: 45%;
+                font-size: 90px;
+                display: flex; 
+                font-weight: bold;
+                padding: 0px;
+                margin: 0px;
+                border-radius: 10px;
+                z-index: 5;
+                justify-content: center; 
+                align-items: center; 
+                background: rgba(255, 255, 255, 0.8);
+                border: 8px solid black;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%); 
+                position: absolute;    
+            }
+            .container {
+                justify-content: center; 
+                align-items: center; 
+                display: flex;
+            }
+            h3{
+                font-size: 80;
+            }
+            @media(max-width:1000px)
+            {
+                h1 {font-size: 60px; position: absolute; top: 20%}
+                table img {
+                    width: 200px !important;
+                    height: 200px !important;
+                }
+                h3 {font-size: 50}
+            }
+            @media(max-width:650px)
+            {
+                h1 {
+                    font-size: 50px; 
+                    position: absolute; 
+                    top: 18%;
+                    padding-left: 25px;
+                    padding-right: 25px;
+
+                }
+                table img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+
+            }
+            @media(max-width:500px)
+            {
+                h1 {
+                    font-size: 50px; 
+                    position: absolute; 
+                    top: 15%;
+                    padding-left: 25px;
+                    padding-right: 25px;
+
+                }
+                table img {
+                    width: 100px !important;
+                    height: 100px !important;
+                }
+
+            }
+            table {
+                border-collapse: collapse;
+                margin: auto;
+                padding: 2.5%;
+                width: 90%;
+            }
+            table img {
+                width: 250px;
+                height: 250px;
+            }
+            th, td {
+                padding: 8px;
+                text-align: center;
+            }
+            p {
+                width: 90%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul id='nav' class="nav">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+            <li><a href="services.html"> Services </a></li>
+            <li><a href="about.html"> About </a></li>
+        </ul>
+        <div class="image-container">
+            <h1>TerraSpeak</h1>
+            <img src="Flags3.jpg" style="margin-top: 0px;width: 100%; padding: 0;">
+
+        </div>
+        <h2>What We Do</h2>
+        <div class="container">
+            <p style="font-size: 20px;">At Terraspeak, we bridge the gap between businesses, event organizers, and international partners by providing expert translation and technical communication services. Whether you need real-time interpretation for a conference, seamless collaboration between multinational teams, or precise translations of critical documents, our team ensures your message is understood—without compromise.
+            </p>
+        </div>
+        <h2>Languages Offered</h2>
+        <div class="container">
+            <table> 
+                <tr>
+                    <td><img src="portugal.jpg">
+                        <h3>
+                            Portuguese
+                        </h3>
+                    </td>
+                    <td><img src="uk.jpg">
+                        <h3>
+                            English
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="spain.jpg">
+                        <h3>
+                            Spanish
+                        </h3>
+                    </td>
+                    <td><img src="turkey.jpg">
+                        <h3>
+                            Turkish
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="germany.png">
+                        <h3>
+                            German
+                        </h3>
+                    </td>
+                    <td><img src="italy.png">
+                        <h3>
+                            Italian
+                        </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="china.jpg">
+                        <h3>
+                            Chinese
+                        </h3>
+                    </td>
+                    <td><img src="france.png">
+                        <h3>
+                            French
+                        </h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <p>Website created by Ben Scharr-Weiner. Contact at bscharrweiner@gmail.com.</p>
+            <p>Attributions: <a href="https://www.vecteezy.com/free-png/spain-flag">Spain Flag PNGs by Vecteezy</a>, 
+                <a href="https://www.vecteezy.com/free-png/germany-flag">Germany Flag PNGs by Vecteezy</a>, 
+                <a href="https://www.vecteezy.com/free-png/world-flags">World Flags PNGs by Vecteezy</a>, 
+                <a href="https://www.vecteezy.com/free-png/country">Country PNGs by Vecteezy</a>,
+                <a href="https://www.vecteezy.com/free-png/uk">Uk PNGs by Vecteezy</a>,
+                <a href="https://www.vecteezy.com/free-png/country">Country PNGs by Vecteezy</a>,
+                <a href="https://www.vecteezy.com/free-png/flag">Flag PNGs by Vecteezy</a></p>
+            <p>© 2025 TerraSpeak. All Rights Reserved.</p>
+        </div>
 
 
-</body>
+    </body>
 </html>
