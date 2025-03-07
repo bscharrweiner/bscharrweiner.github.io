@@ -1,0 +1,73 @@
+<?xml-stylesheet type="text/css" href="products.css"?>
+<productsList>
+    <product id="1">
+        <name>Axis and Allies 1940 Europe</name>
+        <description>Axis and Allies 1940 Europe recreates World War II's greatest battles. From Stalingrad to Normandy experience the awes of war leave an irrevocable mark on history.</description>
+        <price>80</price>
+        <categories>
+            <category>Board Games</category>
+            <category>War</category>
+        </categories>
+    </product>
+    <product id="2">
+        <name>Twilight Struggle</name>
+        <description>Take part in a battle of influence across the world between the time's greatest powers, the Soviet Union, and the United States.</description>
+        <price>75</price>
+        <categories>
+            <category>Board Games</category>
+        </categories>
+    </product>
+    <product id="3">
+        <name>Uno</name>
+        <description>An original classic, perfect for family fun!</description>
+        <price>20</price>
+        <categories>
+            <category>Cards</category>
+            <category>Family</category>
+        </categories>
+    </product>
+    <product id="4">
+        <name>Deck of Cards</name>
+        <description>What people have been playing with for centuries, containing inumerable unique variants.</description>
+        <price>8</price>
+        <categories>
+            <category>Cards</category>
+            <category>Classic</category>
+        </categories>    
+    </product>
+    <product id="5">
+        <name>Connect4</name>
+        <description>Race against an opponent to get 4 pieces in a row!</description>
+        <price>18</price>
+        <categories>
+            <category>Family</category>
+            <category>Board Game</category>
+        </categories>
+    </product>
+    <product id="6">
+        <name>Smash Up</name>
+        <description>Combine decks to create new combos and unlimited combinations for insane fun!</description>
+        <price>35</price>
+        <categories>
+            <category>Cards</category>
+            <category>Board Game</category>
+        </categories>
+    </product>
+    <product id="7">
+        <name>Versailles 1919</name>
+        <description>Redo the Treaty of Versailles! Position your country the best in this battle for influence across issues.</description>
+        <price>41</price>
+        <categories>
+            <category>Cards</category>
+            <category>Board Game</category>
+        </categories>
+    </product>
+    <product id="8">
+        <name>Churchill</name>
+        <description>World War II is in full swing, three main people, Churchill, Roosevelt, and Stalin stand alone against the Nazis, but once they are dealt with, who will emerge on top?</description>
+        <price>67</price>
+        <categories>
+            <category>War</category>
+        </categories>
+    </product>
+</productsList>

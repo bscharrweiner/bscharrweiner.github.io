@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <select name="Categories" id="filter">
+                <option value="Select">Select</option>
+                <option value="Board Games">Board Games</option>
+                <option value="War">War</option>
+                <option value="Cards">Cards</option>
+                <option value="Family">Family</option>
+                <option value="Classic">Classic</option>
+            </select>
+            <label for="Categories">Filter</label>
+
+        </div>
+        <div id="result">
+            <script>
+                document.getElementById("filter").addEventListener('change', function() {
+                    let selectedValue = event.target.value;
+                    $.get("products.json", function(products) {
+                        let result = document.getElementById("result");
+                        result.innerHTML = "";
+                        for(let x = 0; x < 8; x++) {
+                            let product = document.createElement("div");
+                            product.id = "product" + x;
+                            result.appendChild(product);
+                            let innerHTML = document.getElementById("product" + x).innerHTML;
+                            let displayThis = false;
+                            if(products[x].categories == 2) {
+                                for(let a = 0; a < 2; a++) {
+                                    if(products[x].category0 == selectedValue) {
+                                        displayThis = true;
+                                    } else if(products[x].category1 == selectedValue) {
+                                        displayThis = true;
+                                    }
+                                }
+                            } else if(products[x].categories == 1) {
+                                if(products[x].category0 == selectedValue) {
+                                    displayThis = true;
+                                }
+                            }
+                            if(displayThis == true) {
+                                innerHTML += `
+                                    <h2>${products[x].name}</h2>
+                                    <p>Description: ${products[x].description}</p>
+                                    <p>Price: $${products[x].price}</p>
+                                `;
+                                if(2 == products[x].categories) {
+                                    innerHTML += `
+                                    <p>Categories: ${products[x].category0}, ${products[x].category1}</p>
+                                    `
+                                } else {
+                                    innerHTML += `
+                                    <p>Categories: ${products[x].category0}</p>
+                                    `
+                                }
+                                document.getElementById("product" + x).innerHTML = innerHTML;
+                                }
+                            }
+                    });
+                });
+                        
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div id="result">
+            <button type="button" id="button">
+                Print
+            </button>     
+            <script>
+                document.getElementById("button").addEventListener('click', function() {
+                    $.get("products.json", function(products) {
+                        let result = document.getElementById("result");
+                        for(let x = 0; x < 8; x++) {
+                            let product = document.createElement("div");
+                            product.id = "product" + x;
+                            result.appendChild(product);
+                            let innerHTML = document.getElementById("product" + x).innerHTML;
+                            innerHTML += `
+                                <h2>${products[x].name}</h2>
+                                <p>Description: ${products[x].description}</p>
+                                <p>Price: $${products[x].price}</p>
+                            `;
+                            if(2 == products[x].categories) {
+                                innerHTML += `
+                                <p>Categories: ${products[x].category0}, ${products[x].category1}</p>
+                                `
+                            } else {
+                                innerHTML += `
+                                <p>Categories: ${products[x].category0}</p>
+                                `
+                            }
+                            document.getElementById("product" + x).innerHTML = innerHTML;
+                        }
+                    });
+                });
+                        
+            </script>
+        </div>
+    </body>
+</html>
